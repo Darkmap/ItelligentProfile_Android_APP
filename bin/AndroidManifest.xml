@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daocaowu.itelligentprofile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <!-- 本软件的任务服务是否能被被外部使用的权限 -->
+    <permission
+        android:name="oem.permission.TAST_ALART"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="oem.permission.TAST_ALART" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 增加Bluetooth的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <!-- 开启GPRS权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 开启wifi权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <!-- 百度地图使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- 百度地图定位功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <!-- 录音记事所需权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_2"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.MainPad"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.BaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.AddProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.AddTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.GPSMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <receiver
+            android:name="com.daocaowu.itelligentprofile.service.TaskReceiver"
+            android:persistent="true" >
+            <intent-filter>
+                <action android:name="com.daocaowu.itelligentprofile.service.TASK_ALERT" />
+                <action android:name="com.daocaowu.itelligentprofile.service.TASK_WIFI" />
+                <action android:name="com.daocaowu.itelligentprofile.service.TASK_GPS" />
+                <action android:name="com.daocaowu.itelligentprofile.service.GPS_TASK" />
+                <action android:name="com.daocaowu.itelligentprofile.service.WIFI_TASK" />
+                <action android:name="com.daocaowu.itelligentprofile.service.POWER_SAVING_TASK"/>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.supplicant.STATE_CHANGE" />
+                <action android:name="task_killed" />
+                <action android:name="cancel_snooze" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.daocaowu.itelligentprofile.service.TaskInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider_2x"
+            android:label="@string/app_widget2x2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2x_info" />
+        </receiver>
+        <receiver
+            android:name="com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider_4x"
+            android:label="@string/app_widget4x4" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x_info" />
+        </receiver>
+
+        <!-- service -->
+        <service
+            android:name="com.daocaowu.itelligentprofile.service.MonitorService"
+            android:enabled="true" />
+        <service
+            android:name="com.daocaowu.itelligentprofile.service.TaskReceiverService"
+            android:label="@string/TaskReceiverServiceName"
+            android:enabled="true"
+            android:persistent="true" >
+            <intent-filter>
+                <action android:name="com.daocaowu.itelligentprofile.service.TASK_ALERT" />
+                <action android:name="com.daocaowu.itelligentprofile.service.WIFI_TASK" />
+                <action android:name="com.daocaowu.itelligentprofile.service.POWER_SAVING_TASK"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.daocaowu.itelligentprofile.service.GPSService"
+            android:enabled="true"
+            android:persistent="true" >
+            <intent-filter>
+                <action android:name="com.daocaowu.itelligentprofile.service.GPS_TASK" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.WifiProfileActivity"
+            android:label="@string/title_activity_wifi_profile"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.daocaowu.itelligentprofile.activity.LoadOfflineMapActivity"
+            android:label="@string/title_activity_load_offline_map"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

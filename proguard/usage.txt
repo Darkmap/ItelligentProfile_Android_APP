@@ -1,0 +1,1923 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.app.ActivityCompat
+android.support.v4.app.ActivityCompatHoneycomb:
+    27:27:ActivityCompatHoneycomb()
+    34:35:static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    static final int OP_DETACH
+    static final int OP_ATTACH
+    338:338:public int getId()
+    342:342:public int getBreadCrumbTitleRes()
+    346:346:public int getBreadCrumbShortTitleRes()
+    350:353:public java.lang.CharSequence getBreadCrumbTitle()
+    357:360:public java.lang.CharSequence getBreadCrumbShortTitle()
+    379:380:public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    384:385:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    434:439:public android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    443:448:public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    452:457:public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    479:479:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    484:488:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    492:493:public android.support.v4.app.FragmentTransaction setTransition(int)
+    497:498:public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    502:508:public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    512:512:public boolean isAddToBackStackAllowed()
+    516:521:public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    525:527:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    531:533:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    537:539:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    543:545:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    779:779:public int getTransition()
+    783:783:public int getTransitionStyle()
+    787:787:public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STOPPED
+    static final int STARTED
+    static final int RESUMED
+    481:481:public final int getId()
+    488:488:public final java.lang.String getTag()
+    499:503:public void setArguments(android.os.Bundle)
+    510:510:public final android.os.Bundle getArguments()
+    522:527:public void setInitialSavedState(android.support.v4.app.Fragment$SavedState)
+    541:543:public void setTargetFragment(android.support.v4.app.Fragment,int)
+    549:549:public final android.support.v4.app.Fragment getTargetFragment()
+    556:556:public final int getTargetRequestCode()
+    583:583:public final java.lang.CharSequence getText(int)
+    593:593:public final java.lang.String getString(int)
+    606:606:public final varargs java.lang.String getString(int,java.lang.Object[])
+    620:620:public final android.support.v4.app.FragmentManager getFragmentManager()
+    628:640:public final android.support.v4.app.FragmentManager getChildFragmentManager()
+    648:648:public final android.support.v4.app.Fragment getParentFragment()
+    655:655:public final boolean isAdded()
+    673:673:public final boolean isRemoving()
+    684:684:public final boolean isInLayout()
+    692:692:public final boolean isResumed()
+    701:701:public final boolean isVisible()
+    713:713:public final boolean isHidden()
+    749:749:public final boolean getRetainInstance()
+    760:766:public void setHasOptionsMenu(boolean)
+    778:784:public void setMenuVisibility(boolean)
+    800:805:public void setUserVisibleHint(boolean)
+    812:812:public boolean getUserVisibleHint()
+    819:827:public android.support.v4.app.LoaderManager getLoaderManager()
+    846:850:public void startActivityForResult(android.content.Intent,int)
+    1288:1289:public void registerForContextMenu(android.view.View)
+    1299:1300:public void unregisterForContextMenu(android.view.View)
+    1410:1416:android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.Fragment$SavedState:
+    301:303:Fragment$SavedState(android.os.Bundle)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    static final int MSG_RESUME_PENDING
+    612:614:public java.lang.Object getLastCustomNonConfigurationInstance()
+    854:859:public android.support.v4.app.LoaderManager getSupportLoaderManager()
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+    129:129:FragmentActivity$FragmentTag()
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    139:139:public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String)
+    public abstract android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    334:335:public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+    466:471:public void popBackStack()
+    482:487:public void popBackStack(java.lang.String,int)
+    491:493:public boolean popBackStackImmediate(java.lang.String,int)
+    498:506:public void popBackStack(int,int)
+    510:515:public boolean popBackStackImmediate(int,int)
+    520:520:public int getBackStackEntryCount()
+    525:525:public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    530:534:public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    538:541:public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    572:580:public android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    1314:1322:public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentPagerAdapter
+android.support.v4.app.FragmentStatePagerAdapter
+android.support.v4.app.FragmentTabHost:
+    private android.widget.FrameLayout mRealTabContent
+    130:132:public FragmentTabHost(android.content.Context)
+    135:137:public FragmentTabHost(android.content.Context,android.util.AttributeSet)
+    140:172:private void initFragmentTabHost(android.content.Context,android.util.AttributeSet)
+    186:190:public void setup(android.content.Context,android.support.v4.app.FragmentManager)
+    193:205:public void setup(android.content.Context,android.support.v4.app.FragmentManager,int)
+    208:215:private void ensureContent()
+    223:242:public void addTab(android.widget.TabHost$TabSpec,java.lang.Class,android.os.Bundle)
+android.support.v4.app.FragmentTabHost$DummyTabFactory
+android.support.v4.app.FragmentTabHost$TabInfo:
+    67:71:FragmentTabHost$TabInfo(java.lang.String,java.lang.Class,android.os.Bundle)
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    177:178:public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    boolean mCreatingLoader
+    489:492:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    498:503:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    508:515:void installLoader(android.support.v4.app.LoaderManagerImpl$LoaderInfo)
+    543:565:public android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    593:647:public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    658:678:public void destroyLoader(int)
+    686:697:public android.support.v4.content.Loader getLoader(int)
+android.support.v4.app.LoaderManagerImpl$LoaderInfo:
+    228:232:public LoaderManagerImpl$LoaderInfo(android.support.v4.app.LoaderManagerImpl,int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    362:415:public void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.app.NavUtils
+android.support.v4.app.NavUtils$NavUtilsImpl
+android.support.v4.app.NavUtils$NavUtilsImplBase
+android.support.v4.app.NavUtils$NavUtilsImplJB
+android.support.v4.app.NavUtilsJB
+android.support.v4.app.NotificationCompat
+android.support.v4.app.NotificationCompat$Action
+android.support.v4.app.NotificationCompat$BigPictureStyle
+android.support.v4.app.NotificationCompat$BigTextStyle
+android.support.v4.app.NotificationCompat$Builder
+android.support.v4.app.NotificationCompat$InboxStyle
+android.support.v4.app.NotificationCompat$NotificationCompatImpl
+android.support.v4.app.NotificationCompat$NotificationCompatImplBase
+android.support.v4.app.NotificationCompat$NotificationCompatImplHoneycomb
+android.support.v4.app.NotificationCompat$NotificationCompatImplIceCreamSandwich
+android.support.v4.app.NotificationCompat$NotificationCompatImplJellybean
+android.support.v4.app.NotificationCompat$Style
+android.support.v4.app.NotificationCompatHoneycomb
+android.support.v4.app.NotificationCompatIceCreamSandwich
+android.support.v4.app.NotificationCompatJellybean
+android.support.v4.app.ServiceCompat
+android.support.v4.app.ShareCompat
+android.support.v4.app.ShareCompat$IntentBuilder
+android.support.v4.app.ShareCompat$IntentReader
+android.support.v4.app.ShareCompat$ShareCompatImpl
+android.support.v4.app.ShareCompat$ShareCompatImplBase
+android.support.v4.app.ShareCompat$ShareCompatImplICS
+android.support.v4.app.ShareCompat$ShareCompatImplJB
+android.support.v4.app.ShareCompatICS
+android.support.v4.app.ShareCompatJB
+android.support.v4.app.TaskStackBuilder
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImpl
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplBase
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplHoneycomb
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplJellybean
+android.support.v4.app.TaskStackBuilderHoneycomb
+android.support.v4.app.TaskStackBuilderJellybean
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.ContextCompat
+android.support.v4.content.ContextCompatHoneycomb
+android.support.v4.content.ContextCompatJellybean
+android.support.v4.content.CursorLoader
+android.support.v4.content.IntentCompat
+android.support.v4.content.IntentCompat$IntentCompatImpl
+android.support.v4.content.IntentCompat$IntentCompatImplBase
+android.support.v4.content.IntentCompat$IntentCompatImplHC
+android.support.v4.content.IntentCompat$IntentCompatImplIcsMr1
+android.support.v4.content.IntentCompatHoneycomb
+android.support.v4.content.IntentCompatIcsMr1
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    90:92:public Loader(android.content.Context)
+    102:105:public void deliverResult(java.lang.Object)
+    111:111:public android.content.Context getContext()
+    118:118:public int getId()
+    157:157:public boolean isStarted()
+    166:166:public boolean isAbandoned()
+    175:175:public boolean isReset()
+    217:218:public void forceLoad()
+    225:225:protected void onForceLoad()
+    261:263:public void abandon()
+    275:275:protected void onAbandon()
+    312:314:public boolean takeContentChanged()
+    326:334:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.net.ConnectivityManagerCompat
+android.support.v4.net.ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompatGingerbread
+android.support.v4.net.ConnectivityManagerCompatHoneycombMR2
+android.support.v4.net.ConnectivityManagerCompatJellyBean
+android.support.v4.net.TrafficStatsCompat
+android.support.v4.net.TrafficStatsCompat$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags
+android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompatIcs
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2:
+    36:36:public java.lang.Object createFromParcel(android.os.Parcel)
+    40:40:public java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader)
+    44:44:public java.lang.Object[] newArray(int)
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.util.AtomicFile
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LongSparseArray
+android.support.v4.util.LruCache
+android.support.v4.util.SparseArrayCompat:
+    52:52:public java.lang.Object get(int)
+    60:65:public java.lang.Object get(int,java.lang.Object)
+    73:81:public void delete(int)
+    87:88:public void remove(int)
+    94:98:public void removeAt(int)
+    107:111:public void removeAtRange(int,int)
+    146:190:public void put(int,java.lang.Object)
+    236:241:public void setValueAt(int,java.lang.Object)
+    249:253:public int indexOfKey(int)
+    265:273:public int indexOfValue(java.lang.Object)
+    296:323:public void append(int,java.lang.Object)
+    326:342:private static int binarySearch(int[],int,int,int)
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat:
+    336:337:public void sendAccessibilityEvent(android.view.View,int)
+    358:359:public void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+    379:379:public boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    399:400:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    419:420:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    438:439:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    462:462:public boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    480:480:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    500:500:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl:
+    172:172:public boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    179:180:public void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    185:187:public void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    192:193:public void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    198:198:public boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    204:205:public void sendAccessibilityEvent(java.lang.Object,android.view.View,int)
+    210:211:public void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1:
+    132:132:public boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    137:138:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    142:144:public void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+    148:149:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    154:154:public boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    159:160:public void sendAccessibilityEvent(android.view.View,int)
+    164:165:public void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl:
+    public abstract boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void sendAccessibilityEvent(java.lang.Object,android.view.View,int)
+    public abstract void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(java.lang.Object,android.view.View)
+    public abstract boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl:
+    275:280:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(java.lang.Object,android.view.View)
+    286:286:public boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl$1:
+    223:223:public boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    228:229:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    233:235:public void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+    239:240:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    245:245:public boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    250:251:public void sendAccessibilityEvent(android.view.View,int)
+    255:256:public void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+    260:262:public java.lang.Object getAccessibilityNodeProvider(android.view.View)
+    267:267:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl:
+    68:68:public boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    75:75:public void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    81:81:public void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    87:87:public void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    92:92:public boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    98:98:public void sendAccessibilityEvent(java.lang.Object,android.view.View,int)
+    104:104:public void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    109:109:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(java.lang.Object,android.view.View)
+    115:115:public boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompatIcs:
+    28:30:AccessibilityDelegateCompatIcs()
+    87:87:public static boolean dispatchPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    92:93:public static void onInitializeAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    96:98:public static void onInitializeAccessibilityNodeInfo(java.lang.Object,android.view.View,java.lang.Object)
+    102:103:public static void onPopulateAccessibilityEvent(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+    107:107:public static boolean onRequestSendAccessibilityEvent(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    112:113:public static void sendAccessibilityEvent(java.lang.Object,android.view.View,int)
+    117:118:public static void sendAccessibilityEventUnchecked(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent)
+android.support.v4.view.AccessibilityDelegateCompatIcs$1:
+    49:49:public boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    54:55:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    59:60:public void onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo)
+    64:65:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    70:70:public boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    75:76:public void sendAccessibilityEvent(android.view.View,int)
+    80:81:public void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge:
+    public abstract boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void sendAccessibilityEvent(android.view.View,int)
+    public abstract void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+android.support.v4.view.AccessibilityDelegateCompatJellyBean:
+    30:32:AccessibilityDelegateCompatJellyBean()
+    99:99:public static java.lang.Object getAccessibilityNodeProvider(java.lang.Object,android.view.View)
+    104:104:public static boolean performAccessibilityAction(java.lang.Object,android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$1:
+    51:51:public boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    56:57:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    61:62:public void onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo)
+    66:67:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    72:72:public boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    77:78:public void sendAccessibilityEvent(android.view.View,int)
+    82:83:public void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+    87:87:public android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View)
+    92:92:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean:
+    public abstract boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void sendAccessibilityEvent(android.view.View,int)
+    public abstract void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract java.lang.Object getAccessibilityNodeProvider(android.view.View)
+    public abstract boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+android.support.v4.view.GestureDetectorCompat
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImpl
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplBase
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplJellybeanMr1
+android.support.v4.view.KeyEventCompat:
+    25:95:public KeyEventCompat()
+    127:127:public static int normalizeMetaState(int)
+    131:131:public static boolean metaStateHasModifiers(int,int)
+    135:135:public static boolean metaStateHasNoModifiers(int)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl:
+    98:98:public int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+    26:26:public static int normalizeMetaState(int)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    public static final int ACTION_HOVER_ENTER
+    public static final int ACTION_HOVER_EXIT
+    25:80:public MotionEventCompat()
+    183:183:public static int getActionMasked(android.view.MotionEvent)
+    236:236:public static int getPointerCount(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl:
+    73:73:public int getPointerCount(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl:
+    99:99:public int getPointerCount(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl:
+    public abstract int getPointerCount(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+    38:38:public static int getPointerCount(android.view.MotionEvent)
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    276:277:public void notifyDataSetChanged()
+android.support.v4.view.PagerTabStrip
+android.support.v4.view.PagerTabStrip$1
+android.support.v4.view.PagerTabStrip$2
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip$1
+android.support.v4.view.PagerTitleStrip$PageListener
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplBase
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplIcs
+android.support.v4.view.PagerTitleStripIcs
+android.support.v4.view.PagerTitleStripIcs$SingleLineAllCapsTransform
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+    91:91:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl:
+    44:44:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl:
+    58:58:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl:
+    public abstract float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+    29:29:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    private static final long FAKE_FRAME_TIME
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_AUTO
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_YES
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_NO
+    public static final int LAYER_TYPE_NONE
+    public static final int LAYER_TYPE_SOFTWARE
+    public static final int LAYER_TYPE_HARDWARE
+    31:308:public ViewCompat()
+    358:358:public static boolean canScrollVertically(android.view.View,int)
+    387:388:public static void setOverScrollMode(android.view.View,int)
+    424:425:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    457:458:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    493:494:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    520:520:public static boolean hasTransientState(android.view.View)
+    531:532:public static void setHasTransientState(android.view.View,boolean)
+    562:563:public static void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    593:594:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    643:643:public static boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    670:670:public static android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    733:733:public static int getLayerType(android.view.View)
+    744:744:public static int getLabelFor(android.view.View)
+    755:756:public static void setLabelFor(android.view.View,int)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    144:144:public boolean canScrollVertically(android.view.View,int)
+    151:151:public void setOverScrollMode(android.view.View,int)
+    157:157:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    160:160:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    163:163:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    166:166:public boolean hasTransientState(android.view.View)
+    170:170:public void setHasTransientState(android.view.View,boolean)
+    175:176:public void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    181:182:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    193:193:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    196:196:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    201:201:public int getLayerType(android.view.View)
+    204:204:public int getLabelFor(android.view.View)
+    208:208:public void setLabelFor(android.view.View,int)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    218:219:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$HCViewCompatImpl:
+    230:230:public int getLayerType(android.view.View)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    241:241:public boolean canScrollVertically(android.view.View,int)
+    245:246:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    249:250:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    253:254:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+android.support.v4.view.ViewCompat$JBViewCompatImpl:
+    264:264:public boolean hasTransientState(android.view.View)
+    268:269:public void setHasTransientState(android.view.View,boolean)
+    276:277:public void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    284:285:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    296:296:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    300:304:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl:
+    312:312:public int getLabelFor(android.view.View)
+    317:318:public void setLabelFor(android.view.View,int)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract boolean hasTransientState(android.view.View)
+    public abstract void setHasTransientState(android.view.View,boolean)
+    public abstract void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    public abstract void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    public abstract boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    public abstract android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    public abstract int getLayerType(android.view.View)
+    public abstract int getLabelFor(android.view.View)
+    public abstract void setLabelFor(android.view.View,int)
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatHC:
+    23:23:ViewCompatHC()
+    33:33:public static int getLayerType(android.view.View)
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewCompatJB:
+    25:25:public ViewCompatJB()
+    28:28:public static boolean hasTransientState(android.view.View)
+    32:33:public static void setHasTransientState(android.view.View,boolean)
+    41:42:public static void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    49:50:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    61:61:public static boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    65:65:public static java.lang.Object getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompatJellybeanMr1
+android.support.v4.view.ViewConfigurationCompat:
+    25:46:public ViewConfigurationCompat()
+android.support.v4.view.ViewConfigurationCompatFroyo:
+    24:24:ViewConfigurationCompatFroyo()
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int DEFAULT_GUTTER_SIZE
+    private static final int MIN_FLING_VELOCITY
+    private boolean mIgnoreGutter
+    private static final int INVALID_POINTER
+    private static final int CLOSE_ENOUGH
+    private static final int DRAW_ORDER_DEFAULT
+    private static final int DRAW_ORDER_FORWARD
+    private static final int DRAW_ORDER_REVERSE
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    578:590:public void setPageTransformer(boolean,android.support.v4.view.ViewPager$PageTransformer)
+    622:624:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    746:747:void smoothScrollTo(int,int)
+    84:84:static synthetic android.support.v4.view.PagerAdapter access$200(android.support.v4.view.ViewPager)
+    84:84:static synthetic int access$300(android.support.v4.view.ViewPager)
+android.support.v4.view.ViewPager$MyAccessibilityDelegate:
+    2645:2647:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    2651:2660:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    2664:2681:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcsMr1
+android.support.v4.view.accessibility.AccessibilityRecordCompatJellyBean
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.EdgeEffectCompat:
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.ScrollerCompat
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs
+android.support.v4.widget.ScrollerCompatIcs
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnCloseListenerCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$2
+android.support.v4.widget.SearchViewCompat$SearchViewCompatIcsImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$2
+android.support.v4.widget.SearchViewCompatHoneycomb$OnCloseListenerCompatBridge
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SearchViewCompatIcs
+android.support.v4.widget.SearchViewCompatIcs$MySearchView
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+cn.thinkit.libtmfe.test.JNI
+com.baidu.location.BDLocation:
+    public static final int TypeNone
+    public static final int TypeGpsLocation
+    public static final int TypeCriteriaException
+    public static final int TypeNetWorkException
+    public static final int TypeOffLineLocation
+    public static final int TypeOffLineLocationFail
+    public static final int TypeOffLineLocationNetworkFail
+    public static final int TypeNetWorkLocation
+    public static final int TypeCacheLocation
+    public static final int TypeServerError
+    public BDLocation(double,double,float)
+    public BDLocation(java.lang.String,double,double,float,java.lang.String,java.lang.String)
+    public java.lang.String toJsonString()
+    public boolean isCellChangeFlag()
+    public double getAltitude()
+    public void setAltitude(double)
+    public java.lang.String getCoorType()
+    public void setCoorType(java.lang.String)
+    public boolean hasAltitude()
+    public boolean hasSpeed()
+    public boolean hasRadius()
+    public com.baidu.location.BDLocation toNewLocation(java.lang.String)
+    public boolean hasSateNumber()
+    public boolean hasAddr()
+    public java.lang.String getProvince()
+    public java.lang.String getCity()
+    public java.lang.String getCityCode()
+    public java.lang.String getDistrict()
+    public java.lang.String getStreet()
+    public java.lang.String getStreetNumber()
+com.baidu.location.Jni:
+    Jni()
+com.baidu.location.LocationClient:
+    private static final java.lang.String for
+    private static final int try
+    private static final int p
+    private static final int void
+    private static final int B
+    private static final int m
+    private static final int o
+    private static final int h
+    private static final int b
+    private static final int f
+    private static final int if
+    private static final int y
+    private static final int n
+    private static final int goto
+    private static final int s
+    public LocationClient(android.content.Context,com.baidu.location.LocationClientOption)
+    public com.baidu.location.LocationClientOption getLocOption()
+    public boolean updateLocation(android.location.Location)
+    public int requestOfflineLocation()
+    public int requestPoi()
+    public com.baidu.location.BDLocation getLastKnownLocation()
+    public java.lang.String getVersion()
+    public void registerNotify(com.baidu.location.BDNotifyListener)
+    public void unRegisterLocationListener(com.baidu.location.BDLocationListener)
+    public void setForBaiduMap(boolean)
+com.baidu.location.LocationClientOption:
+    public static final int MIN_SCAN_SPAN
+    public static final int GpsFirst
+    public static final int NetWorkFirst
+    public java.lang.String getCoorType()
+    public java.lang.String getAddrType()
+    public void setAddrType(java.lang.String)
+    public boolean isOpenGps()
+    public boolean isLocationNotify()
+    public void setLocationNotify(boolean)
+    public int getScanSpan()
+    public int getTimeOut()
+    public void setTimeOut(int)
+    public java.lang.String getProdName()
+    public void setProdName(java.lang.String)
+    public int getPriority()
+    public void setPriority(int)
+    public java.lang.String getServiceName()
+    public void setServiceName(java.lang.String)
+    public float getPoiDistance()
+    public int getPoiNumber()
+    public boolean getPoiExtranInfo()
+com.baidu.location.a:
+    public void if()
+com.baidu.location.a$a:
+    public void a()
+com.baidu.location.b:
+    private static final java.lang.String if
+    private static final int s
+    private static final int z
+    private static final int p
+    private static final int goto
+    private static final double else
+    private static final int l
+    private static final int h
+    private static final int B
+    private static final int v
+    private static final int M
+    private static final int i
+    private static final int G
+    private static final int void
+    public java.lang.String char()
+    public void goto()
+com.baidu.location.b$c:
+    private boolean for()
+    private boolean long()
+    private boolean goto()
+    private boolean new()
+    public int else()
+    public java.lang.String do()
+    private java.lang.String void()
+    private java.lang.String char()
+    private java.util.List int()
+com.baidu.location.b$d:
+    private boolean if()
+com.baidu.location.c:
+    public java.lang.String int()
+    public java.lang.String for()
+com.baidu.location.c$a:
+    public c$a(com.baidu.location.c,int,int,int,int,char)
+com.baidu.location.d
+com.baidu.location.e:
+    private static final int byte
+com.baidu.location.f:
+    public static final java.lang.String v
+    static final float ap
+    static final int l
+    static final int c
+    static final int long
+    static final int ah
+    static final int g
+    static final int aa
+    static final int for
+    static final int s
+    static final int w
+    static final int W
+    static final int I
+    static final int L
+    static final int do
+    static final int int
+    static final int p
+    static final int case
+    static final int ag
+    static final int z
+    static final int G
+    static final int ar
+    static final int U
+    static final int i
+    static final int ak
+    static final int D
+    static final int aq
+    static final int M
+    static final int b
+    static final int K
+    static final int e
+    static final int void
+    static final int V
+    static final int t
+    static final int B
+    static final int ao
+    static final int S
+    static final int x
+    static final int else
+    static final int ai
+    private static final int at
+    private static final int byte
+    private static final int af
+com.baidu.location.f$c:
+    public static final java.lang.String for
+    public void int()
+com.baidu.location.g:
+    private static final int byte
+    private static final int case
+    public static final int n
+    private static final int i
+    g()
+    public static boolean for(android.content.Context)
+com.baidu.location.h
+com.baidu.location.h$a
+com.baidu.location.i:
+    public static final java.lang.String new
+com.baidu.location.j:
+    public static final boolean case
+    public static final boolean B
+    public static final boolean y
+    private static final int T
+    j()
+    static java.lang.String a()
+    public static void a(java.lang.String)
+    public static void if(java.lang.String)
+com.baidu.location.j$a:
+    private static final boolean a
+com.baidu.location.j$b:
+    private static final java.lang.String if
+    private static final java.lang.String do
+    private static final java.lang.String for
+    private static final java.lang.String a
+    private j$b()
+com.baidu.location.k:
+    private static final int if
+    private static final int for
+    private static final int s
+    private static final int d
+    private static final int f
+    private static final int goto
+    k()
+    public static void a(java.lang.String,int)
+    public static void a(java.lang.String,int,boolean)
+    public static void a(int,int)
+    public static void a(int,int,boolean)
+    public static void for()
+    public static void new()
+com.baidu.mapapi.BMapManager:
+    public boolean stop()
+com.baidu.mapapi.VersionInfo:
+    public VersionInfo()
+com.baidu.mapapi.cloud.Bounds
+com.baidu.mapapi.cloud.BoundsSearchInfo
+com.baidu.mapapi.cloud.CustomPoiInfo
+com.baidu.mapapi.cloud.DetailResult
+com.baidu.mapapi.cloud.DetailSearchInfo
+com.baidu.mapapi.cloud.GeoSearchListener
+com.baidu.mapapi.cloud.GeoSearchManager
+com.baidu.mapapi.cloud.GeoSearchManager$a
+com.baidu.mapapi.cloud.GeoSearchResult
+com.baidu.mapapi.cloud.NearbySearchInfo
+com.baidu.mapapi.cloud.RegionSearchInfo
+com.baidu.mapapi.cloud.a
+com.baidu.mapapi.map.Geometry:
+    public Geometry()
+    public void setPoint(com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    public void setPolyLine(com.baidu.platform.comapi.basestruct.GeoPoint[])
+    public void setCircle(com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    public void setEnvelope(com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint)
+com.baidu.mapapi.map.Graphic:
+    public Graphic(com.baidu.mapapi.map.Geometry,com.baidu.mapapi.map.Symbol)
+    void a(long)
+com.baidu.mapapi.map.GraphicsOverlay:
+    public GraphicsOverlay(com.baidu.mapapi.map.MapView)
+    public long setData(com.baidu.mapapi.map.Graphic)
+    public void removeAll()
+    public void removeGraphic(long)
+com.baidu.mapapi.map.ItemizedOverlay:
+    private java.util.ArrayList b
+    public ItemizedOverlay(android.graphics.drawable.Drawable,com.baidu.mapapi.map.MapView)
+    public void addItem(com.baidu.mapapi.map.OverlayItem)
+    protected static void boundCenterBottom(com.baidu.mapapi.map.OverlayItem)
+    protected static void boundCenter(com.baidu.mapapi.map.OverlayItem)
+    public int getLatSpanE6()
+    public int getLonSpanE6()
+    public com.baidu.platform.comapi.basestruct.GeoPoint getCenter()
+    private int b(boolean)
+    protected int getIndexToDraw(int)
+    protected boolean hitTest(com.baidu.mapapi.map.OverlayItem,android.graphics.drawable.Drawable,int,int)
+    void a(java.util.ArrayList)
+    public boolean removeItem(com.baidu.mapapi.map.OverlayItem)
+    protected com.baidu.mapapi.map.OverlayItem createItem(int)
+    public int size()
+com.baidu.mapapi.map.LocationData:
+    public float speed
+    public int satellitesNum
+com.baidu.mapapi.map.MKEvent:
+    public static final int MKEVENT_MAP_MOVE_FINISH
+    public static final int MKEVENT_BUS_DETAIL
+    public static final int MKEVENT_SUGGESTION
+    public static final int ERROR_NETWORK_CONNECT
+    public static final int ERROR_NETWORK_DATA
+    public static final int ERROR_ROUTE_ADDR
+    public static final int ERROR_RESULT_NOT_FOUND
+    public static final int ERROR_PERMISSION_DENIED
+com.baidu.mapapi.map.MKOLUpdateElement:
+    public static final int UNDEFINED
+    public static final int DOWNLOADING
+    public static final int WAITING
+    public static final int SUSPENDED
+    public static final int FINISHED
+    public static final int eOLDSMd5Error
+    public static final int eOLDSNetError
+    public static final int eOLDSIOError
+    public static final int eOLDSWifiError
+    public static final int eOLDSMissData
+com.baidu.mapapi.map.MKOfflineMap:
+    public static final int TYPE_NEW_OFFLINE
+    public static final int TYPE_DOWNLOAD_UPDATE
+    public static final int TYPE_VER_UPDATE
+    public java.util.ArrayList getHotCityList()
+    public java.util.ArrayList searchCity(java.lang.String)
+    public int scan()
+com.baidu.mapapi.map.MapController:
+    public boolean onKey(android.view.View,int,android.view.KeyEvent)
+    public void scrollBy(int,int)
+    public void setRotation(int)
+    public void setOverlooking(int)
+    public boolean zoomInFixing(int,int)
+    public boolean zoomOutFixing(int,int)
+    public void zoomToSpan(int,int)
+    public boolean handleFling(android.view.MotionEvent,android.view.MotionEvent,float,float)
+com.baidu.mapapi.map.MapView:
+    public void preLoad()
+    void a(int,int)
+    public boolean isSatellite()
+    public boolean isDoubleClickZooming()
+    public void displayZoomControls(boolean)
+com.baidu.mapapi.map.MapView$LayoutParams:
+    public static final int MODE_MAP
+    public static final int MODE_VIEW
+    public static final int LEFT
+    public static final int RIGHT
+    public static final int TOP
+    public static final int BOTTOM
+    public static final int CENTER_HORIZONTAL
+    public static final int CENTER_VERTICAL
+    public static final int CENTER
+    public static final int TOP_LEFT
+    public static final int BOTTOM_CENTER
+    public MapView$LayoutParams(int,int,com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    public MapView$LayoutParams(int,int,com.baidu.platform.comapi.basestruct.GeoPoint,int,int,int)
+    public MapView$LayoutParams(int,int,int,int,int)
+com.baidu.mapapi.map.MapView$a:
+    public float metersToEquatorPixels(float)
+com.baidu.mapapi.map.MyLocationOverlay:
+    public void disableCompass()
+    public boolean isCompassEnable()
+com.baidu.mapapi.map.OverlayItem:
+    protected final java.lang.String mSnippet
+    public OverlayItem(com.baidu.platform.comapi.basestruct.GeoPoint,java.lang.String,java.lang.String)
+    public java.lang.String getSnippet()
+    public java.lang.String getTitle()
+    void a(int)
+com.baidu.mapapi.map.PoiOverlay:
+    public PoiOverlay(android.app.Activity,com.baidu.mapapi.map.MapView)
+    public void setData(java.util.ArrayList)
+    public void animateTo()
+    public int size()
+    public com.baidu.mapapi.search.MKPoiInfo getPoi(int)
+com.baidu.mapapi.map.PopupOverlay:
+    private com.baidu.mapapi.map.MapView b
+    private com.baidu.mapapi.map.MapController c
+    public PopupOverlay(com.baidu.mapapi.map.MapView,com.baidu.mapapi.map.PopupClickListener)
+    public void showPopup(android.graphics.Bitmap[],com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    private android.graphics.Bitmap a(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap)
+    public void showPopup(android.graphics.Bitmap,com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    public void hidePop()
+com.baidu.mapapi.map.RouteOverlay:
+    public java.util.ArrayList mRoute
+    private java.util.ArrayList a
+    public RouteOverlay(android.app.Activity,com.baidu.mapapi.map.MapView)
+    public void setData(com.baidu.mapapi.search.MKRoute)
+    private void c()
+    public void animateTo()
+    protected com.baidu.mapapi.map.OverlayItem createItem(int)
+    public int size()
+com.baidu.mapapi.map.RouteOverlay$1
+com.baidu.mapapi.map.RouteOverlay$a
+com.baidu.mapapi.map.Symbol:
+    public Symbol()
+    public void setPointSymbol(com.baidu.mapapi.map.Symbol$Color)
+    public void setLineSymbol(com.baidu.mapapi.map.Symbol$Color,int)
+    public void setSurface(com.baidu.mapapi.map.Symbol$Color,int,int)
+com.baidu.mapapi.map.Symbol$Color:
+    final synthetic com.baidu.mapapi.map.Symbol a
+    public Symbol$Color(com.baidu.mapapi.map.Symbol)
+com.baidu.mapapi.map.TransitOverlay:
+    public java.util.ArrayList mPlan
+    private java.util.ArrayList a
+    private int d
+    public TransitOverlay(android.app.Activity,com.baidu.mapapi.map.MapView)
+    public void animateTo()
+    public void setData(com.baidu.mapapi.search.MKTransitRoutePlan)
+    private void c()
+    protected com.baidu.mapapi.map.OverlayItem createItem(int)
+    public int size()
+com.baidu.mapapi.map.TransitOverlay$1
+com.baidu.mapapi.map.TransitOverlay$a
+com.baidu.mapapi.navi.BaiduMapAppNotSupportNaviException
+com.baidu.mapapi.navi.BaiduMapNavigation
+com.baidu.mapapi.navi.IllegalNaviArgumentException
+com.baidu.mapapi.navi.NaviPara
+com.baidu.mapapi.search.MKAddrInfo:
+    public static final int MK_GEOCODE
+    public static final int MK_REVERSEGEOCODE
+    public java.lang.String strBusiness
+com.baidu.mapapi.search.MKBusLineResult:
+    public java.lang.String getBusCompany()
+    public java.lang.String getStartTime()
+    public java.lang.String getEndTime()
+    public int isMonTicket()
+    public com.baidu.mapapi.search.MKStep getStation(int)
+com.baidu.mapapi.search.MKDrivingRouteResult:
+    public com.baidu.mapapi.search.MKRouteAddrResult getAddrResult()
+    public int getNumPlan()
+    public com.baidu.mapapi.search.MKRoutePlan getPlan(int)
+com.baidu.mapapi.search.MKLine:
+    public static final int LINE_TYPE_BUS
+    public static final int LINE_TYPE_SUBWAY
+    private java.lang.String f
+    public int getNumViaStops()
+    public com.baidu.mapapi.search.MKPoiInfo getGetOnStop()
+    public com.baidu.mapapi.search.MKPoiInfo getGetOffStop()
+    public java.lang.String getTip()
+    public int getDistance()
+    public int getType()
+    public java.lang.String getUid()
+com.baidu.mapapi.search.MKPoiResult:
+    public java.util.ArrayList getMultiPoiResult()
+    public com.baidu.mapapi.search.MKCityListInfo getCityListInfo(int)
+    public int getNumPois()
+    public int getNumPages()
+    public int getPageIndex()
+    public int getCityListNum()
+com.baidu.mapapi.search.MKRoute:
+    public static final int ROUTE_TYPE_UNKNOW
+    public static final int ROUTE_TYPE_DRIVING
+    public static final int ROUTE_TYPE_WALKING
+    public static final int ROUTE_TYPE_BUS_LINE
+    public int getNumSteps()
+    public com.baidu.mapapi.search.MKStep getStep(int)
+    public int getDistance()
+    public int getIndex()
+    public java.lang.String getTip()
+    public com.baidu.platform.comapi.basestruct.GeoPoint getEnd()
+    public int getRouteType()
+    public void customizeRoute(com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint[])
+    public void customizeRoute(com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint[][])
+com.baidu.mapapi.search.MKRouteAddrResult:
+    public java.util.ArrayList mStartCityList
+    public java.util.ArrayList mEndCityList
+com.baidu.mapapi.search.MKRoutePlan:
+    public int getNumRoutes()
+    public com.baidu.mapapi.search.MKRoute getRoute(int)
+    public int getDistance()
+com.baidu.mapapi.search.MKSearch:
+    public static final int ECAR_TIME_FIRST
+    public static final int ECAR_DIS_FIRST
+    public static final int ECAR_FEE_FIRST
+    public static final int EBUS_TIME_FIRST
+    public static final int EBUS_TRANSFER_FIRST
+    public static final int EBUS_WALK_FIRST
+    public static final int EBUS_NO_SUBWAY
+    public static final int TYPE_CITY_LIST
+    public static final int TYPE_POI_LIST
+    public static final int TYPE_AREA_POI_LIST
+    public static final int TYPE_AREA_MULTI_POI_LIST
+    public static final int POI_DETAIL_SEARCH
+    private java.lang.String[] d
+    private int f
+    public int poiDetailSearch(java.lang.String)
+    public int poiSearchInbounds(java.lang.String,com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint)
+    public int poiMultiSearchInbounds(java.lang.String[],com.baidu.platform.comapi.basestruct.GeoPoint,com.baidu.platform.comapi.basestruct.GeoPoint)
+    public int poiSearchNearBy(java.lang.String,com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    public int poiMultiSearchNearBy(java.lang.String[],com.baidu.platform.comapi.basestruct.GeoPoint,int)
+    public int geocode(java.lang.String,java.lang.String)
+    public int goToPoiPage(int)
+    public static void setPoiPageCapacity(int)
+    public static int getPoiPageCapacity()
+    public int setTransitPolicy(int)
+    public int setDrivingPolicy(int)
+    public int transitSearch(java.lang.String,com.baidu.mapapi.search.MKPlanNode,com.baidu.mapapi.search.MKPlanNode)
+    public int drivingSearch(java.lang.String,com.baidu.mapapi.search.MKPlanNode,java.lang.String,com.baidu.mapapi.search.MKPlanNode)
+    public int walkingSearch(java.lang.String,com.baidu.mapapi.search.MKPlanNode,java.lang.String,com.baidu.mapapi.search.MKPlanNode)
+com.baidu.mapapi.search.MKStep:
+    int a()
+    public java.lang.String getContent()
+com.baidu.mapapi.search.MKTransitRoutePlan:
+    public int getNumLines()
+    public com.baidu.mapapi.search.MKLine getLine(int)
+    public int getNumRoute()
+    public com.baidu.mapapi.search.MKRoute getRoute(int)
+    public int getDistance()
+    public com.baidu.platform.comapi.basestruct.GeoPoint getStart()
+    public com.baidu.platform.comapi.basestruct.GeoPoint getEnd()
+    public java.lang.String getContent()
+com.baidu.mapapi.search.MKTransitRouteResult:
+    public com.baidu.mapapi.search.MKRouteAddrResult getAddrResult()
+    public com.baidu.mapapi.search.MKPlanNode getStart()
+    public com.baidu.mapapi.search.MKPlanNode getEnd()
+    public int getNumPlan()
+    public com.baidu.mapapi.search.MKTransitRoutePlan getPlan(int)
+com.baidu.mapapi.search.MKWalkingRouteResult:
+    public com.baidu.mapapi.search.MKRouteAddrResult getAddrResult()
+    public int getNumPlan()
+    public com.baidu.mapapi.search.MKRoutePlan getPlan(int)
+com.baidu.mapapi.search.a:
+    public a()
+com.baidu.mapapi.search.c:
+    public c()
+    public static java.lang.String a(java.util.ArrayList)
+    public static java.lang.String b(java.util.ArrayList)
+    public static java.lang.String c(java.util.ArrayList)
+    public static boolean a(java.lang.String,com.baidu.mapapi.cloud.GeoSearchResult)
+    public static boolean a(java.lang.String,com.baidu.mapapi.cloud.DetailResult)
+com.baidu.mapapi.utils.CoordinateConvert
+com.baidu.mapapi.utils.DistanceUtil
+com.baidu.mapapi.utils.a:
+    public a()
+com.baidu.mapapi.utils.d:
+    public d()
+com.baidu.mapapi.utils.e:
+    public e()
+com.baidu.mapapi.utils.h:
+    public h()
+com.baidu.platform.comapi.b.b
+com.baidu.platform.comapi.b.e:
+    public int c()
+    public void a(int)
+    public boolean a(java.lang.String,int,int,int,com.baidu.platform.comapi.basestruct.b,com.baidu.platform.comapi.basestruct.b,java.util.Map)
+    public boolean a(java.lang.String,int,int,com.baidu.platform.comapi.basestruct.b,int,com.baidu.platform.comapi.basestruct.c,java.util.Map)
+    public boolean a(java.lang.String[],int,int,int,int,com.baidu.platform.comapi.basestruct.b,com.baidu.platform.comapi.basestruct.b,java.util.Map)
+    private android.os.Bundle a(com.baidu.platform.comapi.b.b)
+    public boolean a(com.baidu.platform.comapi.b.b,com.baidu.platform.comapi.b.b,java.lang.String,com.baidu.platform.comapi.basestruct.b,int,int,java.util.Map)
+    public boolean a(com.baidu.platform.comapi.b.b,com.baidu.platform.comapi.b.b,java.lang.String,java.lang.String,java.lang.String,com.baidu.platform.comapi.basestruct.b,int,int,int,java.util.ArrayList,java.util.Map)
+    public boolean a(com.baidu.platform.comapi.b.b,com.baidu.platform.comapi.b.b,java.lang.String,java.lang.String,java.lang.String,com.baidu.platform.comapi.basestruct.b,int,java.util.Map)
+    public boolean a(java.lang.String)
+    public boolean b(java.lang.String,java.lang.String)
+com.baidu.platform.comapi.b.g
+com.baidu.platform.comapi.basestruct.b:
+    public void a(com.baidu.platform.comapi.basestruct.c)
+    public void b(com.baidu.platform.comapi.basestruct.c)
+com.baidu.platform.comapi.d.a:
+    public a()
+com.baidu.platform.comapi.d.b:
+    public b()
+com.baidu.platform.comapi.d.c:
+    public c()
+com.baidu.platform.comapi.map.A:
+    public int ReqLayerData(android.os.Bundle,int,int)
+com.baidu.platform.comapi.map.B:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.C:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.D:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.E:
+    int b
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.G:
+    int b
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.Projection:
+    public abstract float metersToEquatorPixels(float)
+com.baidu.platform.comapi.map.a:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.b:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.d:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.e:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.f:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.h:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.i:
+    public i(int)
+    public abstract java.lang.String b()
+    public abstract android.os.Bundle d()
+    public int f()
+    public int g()
+com.baidu.platform.comapi.map.j:
+    public float metersToEquatorPixels(float)
+com.baidu.platform.comapi.map.m:
+    public java.util.ArrayList b()
+    public java.util.ArrayList a(java.lang.String)
+com.baidu.platform.comapi.map.s:
+    public java.lang.String b()
+    public android.os.Bundle d()
+com.baidu.platform.comapi.map.t:
+    public boolean d()
+    public boolean b(int,int)
+    public boolean c(int,int)
+com.baidu.platform.comapi.map.v:
+    public float a(com.baidu.platform.comapi.basestruct.b)
+com.baidu.platform.comjni.engine.AppEngine:
+    public AppEngine()
+    public static void despatchMessage(int,int,int)
+    public static void SetProxyInfo(java.lang.String,int)
+    public static boolean GetFlaxLength(android.os.Bundle)
+com.baidu.platform.comjni.engine.JNIEngine:
+    public JNIEngine()
+    public static native void SetProxyInfo(java.lang.String,int)
+    public static native boolean GetFlaxLength(android.os.Bundle)
+com.baidu.platform.comjni.engine.a:
+    public a()
+    public static void a(int,int,int)
+com.baidu.platform.comjni.map.basemap.BaseMapCallback:
+    public int ReqLayerData(android.os.Bundle,int,int)
+com.baidu.platform.comjni.map.basemap.JNIBaseMap:
+    public native java.lang.String OnHotcityGet(int)
+    public native void AddPopupData(int,android.os.Bundle)
+    public native boolean RemoveItemData(int,android.os.Bundle)
+    public native boolean RemoveGeometryData(int,android.os.Bundle)
+com.baidu.platform.comjni.map.basemap.a:
+    public java.lang.String i()
+    public void b(android.os.Bundle)
+    public boolean d(android.os.Bundle)
+    public boolean g(android.os.Bundle)
+com.baidu.platform.comjni.map.search.JNISearch:
+    public native int QueryInterface(int)
+    public native boolean AreaSearch(int,android.os.Bundle)
+    public native boolean AreaMultiSearch(int,android.os.Bundle)
+    public native boolean RoutePlanByBus(int,android.os.Bundle)
+    public native boolean RoutePlanByCar(int,android.os.Bundle)
+    public native boolean RoutePlanByFoot(int,android.os.Bundle)
+    public native boolean POIDetailSearchPlace(int,java.lang.String)
+    public native boolean geocode(int,java.lang.String,java.lang.String)
+    public native boolean GeoSearch(int,android.os.Bundle)
+    public native boolean GeoDetailSearch(int,android.os.Bundle)
+    public native boolean MapBoundSearch(int,android.os.Bundle)
+com.baidu.platform.comjni.map.search.a:
+    public int b()
+    public boolean b(android.os.Bundle)
+    public boolean c(android.os.Bundle)
+    public boolean d(android.os.Bundle)
+    public boolean e(android.os.Bundle)
+    public boolean f(android.os.Bundle)
+    public boolean a(java.lang.String)
+    public boolean b(java.lang.String,java.lang.String)
+    public boolean h(android.os.Bundle)
+    public boolean i(android.os.Bundle)
+    public boolean j(android.os.Bundle)
+com.baidu.platform.comjni.permissioncheck.PermissionCheck:
+    public PermissionCheck()
+com.baidu.platform.comjni.tools.BundleKeySet
+com.baidu.platform.comjni.tools.JNITools:
+    public JNITools()
+    public static native void GetDistanceByMC(java.lang.Object)
+com.baidu.platform.comjni.tools.a:
+    public a()
+    public static double a(com.baidu.platform.comapi.basestruct.c,com.baidu.platform.comapi.basestruct.c)
+com.baidu.vi.AudioFilePlayer
+com.baidu.vi.AudioRecorder
+com.baidu.vi.AudioRecorder$a
+com.baidu.vi.MFE
+com.baidu.vi.VDeviceAPI
+com.baidu.vi.VMsg:
+    public VMsg()
+    private static void postMessage(int,int,int)
+com.baidu.vi.a
+com.baidu.vi.b
+com.baidu.vi.c
+com.baidu.vi.d
+com.baidu.vi.db.SQLiteDatabase4C
+com.baidu.vi.db.SQLiteResultSet4C
+com.baidu.vi.db.SQLiteStatement4C
+com.baidu.vi.e
+com.baidu.vi.f
+com.baidu.vi.g
+com.baidu.vi.h:
+    public h()
+    public static android.content.Context a()
+com.baidu.vi.i
+com.baidu.vi.i$1
+com.daocaowu.itelligentprofile.BuildConfig
+com.daocaowu.itelligentprofile.DBHelper.DBHelper:
+    private static final java.lang.String TAG
+    private static final java.lang.String DB_NAME
+    private static final int DB_VERSION
+    private static final java.lang.String CREATE_PROFILE_TABLE_SQL
+    private static final java.lang.String CREATE_TASK_TABLE_SQL
+    private static final java.lang.String CREAT_PROFILE_UPDATE_TIGGER
+    private static final java.lang.String CREATE_NOTE_TABLE_SQL
+    private static final java.lang.String CREATE_LOCATION_TABLE_SQL
+    private static final java.lang.String CREATE_WIFILOCATION_TABLE_SQL
+com.daocaowu.itelligentprofile.DBHelper.DBHelper$TABLE
+com.daocaowu.itelligentprofile.DBHelper.DBManager:
+    private static final java.lang.String TAG
+    34:35:public DBManager()
+    587:596:public static java.lang.String changeStringArrayToSQLFilter(java.lang.String[])
+    892:896:public static void closeDB()
+    899:899:public static android.database.sqlite.SQLiteDatabase getDb()
+    906:911:public static void deleteAllTable()
+com.daocaowu.itelligentprofile.DBHelper.TableColumns
+com.daocaowu.itelligentprofile.DBHelper.TableColumns$AlarmColumns
+com.daocaowu.itelligentprofile.DBHelper.TableColumns$LocationColumns
+com.daocaowu.itelligentprofile.DBHelper.TableColumns$NoteColumns
+com.daocaowu.itelligentprofile.DBHelper.TableColumns$ProfileColumns
+com.daocaowu.itelligentprofile.DBHelper.TableColumns$TaskColumns
+com.daocaowu.itelligentprofile.DBHelper.TableColumns$WifiLocationColumns
+com.daocaowu.itelligentprofile.Manifest
+com.daocaowu.itelligentprofile.Manifest$permission
+com.daocaowu.itelligentprofile.R
+com.daocaowu.itelligentprofile.R$anim
+com.daocaowu.itelligentprofile.R$attr
+com.daocaowu.itelligentprofile.R$bool
+com.daocaowu.itelligentprofile.R$color
+com.daocaowu.itelligentprofile.R$dimen
+com.daocaowu.itelligentprofile.R$drawable
+com.daocaowu.itelligentprofile.R$id
+com.daocaowu.itelligentprofile.R$integer
+com.daocaowu.itelligentprofile.R$layout
+com.daocaowu.itelligentprofile.R$menu
+com.daocaowu.itelligentprofile.R$string
+com.daocaowu.itelligentprofile.R$style
+com.daocaowu.itelligentprofile.R$styleable
+com.daocaowu.itelligentprofile.R$xml
+com.daocaowu.itelligentprofile.action.AbstractAction
+com.daocaowu.itelligentprofile.action.IAction
+com.daocaowu.itelligentprofile.activity.AddProfileActivity:
+    private static final java.lang.String TAG
+com.daocaowu.itelligentprofile.activity.AddTask:
+    private static final java.lang.String TAG
+com.daocaowu.itelligentprofile.activity.BaseActivity:
+    private static final java.lang.String TAG
+    46:56:private void setUnCatchException()
+com.daocaowu.itelligentprofile.activity.BaseActivity$MyLocationListener
+com.daocaowu.itelligentprofile.activity.GPSMapActivity:
+    private static final java.lang.String TAG
+    765:765:private com.baidu.mapapi.map.LocationData getSelectData()
+com.daocaowu.itelligentprofile.activity.GPSMapActivity$NotifyLister
+com.daocaowu.itelligentprofile.activity.InitActivity:
+    39:49:private void setUnCatchException()
+com.daocaowu.itelligentprofile.activity.LoadOfflineMapActivity:
+    private static final java.lang.String TAG
+    228:242:public java.util.ArrayList getOfflineCityAndProvinceList()
+    340:341:public void setOfflineCityListData()
+    343:344:public void setOfflineCityListData(java.util.ArrayList)
+    397:398:public void setUpdateInfoCityListData()
+    400:401:public void setUpdateInfoCityListData(java.util.ArrayList)
+    407:408:public void startLoadMap(int)
+    413:414:public void pauseLoadMap(int)
+com.daocaowu.itelligentprofile.activity.LocationListActivity
+com.daocaowu.itelligentprofile.activity.LocationListActivity$LocationAction
+com.daocaowu.itelligentprofile.activity.MainPad:
+    private static final java.lang.String TAG
+com.daocaowu.itelligentprofile.activity.MainPad$MyLocationListener
+com.daocaowu.itelligentprofile.activity.MyAlarm
+com.daocaowu.itelligentprofile.activity.NoteListActivity
+com.daocaowu.itelligentprofile.activity.NoteListActivity$NoteAction
+com.daocaowu.itelligentprofile.activity.ProfileListActivity
+com.daocaowu.itelligentprofile.activity.ProfileListActivity$ProfileSetAction
+com.daocaowu.itelligentprofile.activity.TaskListActivity
+com.daocaowu.itelligentprofile.activity.TaskListActivity$TaskAction
+com.daocaowu.itelligentprofile.activity.WebViewActivity:
+    static final java.lang.String mimeType
+    static final java.lang.String encoding
+com.daocaowu.itelligentprofile.activity.WebViewActivity$MyWebViewClient:
+    84:85:public boolean shouldOverviewUrlLoading(android.webkit.WebView,java.lang.String)
+com.daocaowu.itelligentprofile.activity.WifiAdmin:
+    private static final java.lang.String TAG
+    private java.util.List mWifiConfiguration
+    android.net.wifi.WifiManager$WifiLock mWifiLock
+    114:117:public void openNetCard()
+    123:126:public void closeNetCard()
+    132:143:public void checkNetCardState()
+    195:196:public void connect()
+    202:206:public void disconnectWifi()
+    214:219:public void checkNetWorkState()
+    225:225:public int getNetworkId()
+    232:232:public int getIPAddress()
+    237:238:public void acquireWifiLock()
+    243:246:public void releaseWifiLock()
+    250:251:public void creatWifiLock()
+    255:255:public java.util.List getConfiguration()
+    261:267:public void connectConfiguration(int)
+    271:271:public java.lang.String getMacAddress()
+    276:276:public java.lang.String getBSSID()
+    281:281:public java.lang.String getWifiInfo()
+    286:288:public int addNetwork(android.net.wifi.WifiConfiguration)
+com.daocaowu.itelligentprofile.adapter.CalendarListAdapter:
+    88:89:public void addItem(com.daocaowu.itelligentprofile.bean.Task)
+com.daocaowu.itelligentprofile.adapter.GpsAdaptet:
+    86:87:public void addItem(com.daocaowu.itelligentprofile.bean.Location)
+com.daocaowu.itelligentprofile.adapter.GpsMapSearchListAdapter:
+    44:46:public void setNull()
+    101:102:public void addItem(com.baidu.mapapi.search.MKPoiInfo)
+com.daocaowu.itelligentprofile.adapter.GpsMapSearchListAdapter$Holder:
+    public android.widget.RelativeLayout searchRelativeLayout
+com.daocaowu.itelligentprofile.adapter.LocationListAdapter
+com.daocaowu.itelligentprofile.adapter.NoteListAdapter:
+    258:259:public void addItem(com.daocaowu.itelligentprofile.bean.Note)
+com.daocaowu.itelligentprofile.adapter.NoteListAdapter$IMsgViewType
+com.daocaowu.itelligentprofile.adapter.OffMapCityAdapter:
+    205:206:public void addItem(com.baidu.mapapi.map.MKOLSearchRecord)
+com.daocaowu.itelligentprofile.adapter.OffMapCityAdapter$Holder:
+    public android.widget.ImageButton downloadButton
+    public android.widget.RelativeLayout cityRelativeLayout
+com.daocaowu.itelligentprofile.adapter.ProfileListAdapter:
+    private android.widget.TextView tv_profileItem
+    83:84:public void addItem(com.daocaowu.itelligentprofile.bean.Profile)
+com.daocaowu.itelligentprofile.adapter.ProfileSettingAdapter:
+    88:89:public void addItem(com.daocaowu.itelligentprofile.bean.GridItem)
+com.daocaowu.itelligentprofile.adapter.TaskListAdapter
+com.daocaowu.itelligentprofile.adapter.UpdateInfoCityAdapter:
+    198:199:public void addItem(com.baidu.mapapi.map.MKOLUpdateElement)
+com.daocaowu.itelligentprofile.adapter.UpdateInfoCityAdapter$Holder:
+    public android.widget.ImageButton downloadButton
+    public android.widget.RelativeLayout cityRelativeLayout
+com.daocaowu.itelligentprofile.adapter.WifiAdapter:
+    90:91:public void addItem(com.daocaowu.itelligentprofile.bean.WifiLocation)
+com.daocaowu.itelligentprofile.adapter.WifiLocationListAdapter
+com.daocaowu.itelligentprofile.bean.GridItem:
+    27:28:public void setItemname(java.lang.String)
+com.daocaowu.itelligentprofile.fragment.ContentFragment:
+    23:26:public ContentFragment(java.lang.String)
+com.daocaowu.itelligentprofile.fragment.FragmentListAdapter:
+    19:22:public FragmentListAdapter(android.support.v4.app.FragmentManager,java.util.List)
+    74:74:public long getItemId(int)
+com.daocaowu.itelligentprofile.fragment.FragmentPageAdapter
+com.daocaowu.itelligentprofile.fragment.GPSMapFragment:
+    private static final java.lang.String TAG
+com.daocaowu.itelligentprofile.fragment.IntroductionFragment:
+    private static final java.lang.String TAG
+com.daocaowu.itelligentprofile.fragment.NoteFragment:
+    private android.widget.ImageButton imgRecord1
+    private android.widget.ImageButton imgRecord2
+    private boolean isPlaying
+    private int duration
+    private android.media.MediaPlayer mp
+    169:169:private void getRecordFiles()
+    173:179:private void openFile(java.io.File)
+    182:197:private java.lang.String getMIMEType(java.io.File)
+com.daocaowu.itelligentprofile.fragment.PowerSavingFragment:
+    private static final java.lang.String TAG
+    255:270:private void initPowerSavingProfileView()
+com.daocaowu.itelligentprofile.fragment.ViewPagerIndicatorFragment
+com.daocaowu.itelligentprofile.fragment.ViewPagerIndicatorFragment$1
+com.daocaowu.itelligentprofile.fragment.ViewPagerIndicatorFragment$ProfileAdapter
+com.daocaowu.itelligentprofile.fragment.WifiAdmin:
+    private static final java.lang.String TAG
+    private java.util.List mWifiConfiguration
+    android.net.wifi.WifiManager$WifiLock mWifiLock
+    421:424:public void openNetCard()
+    430:433:public void closeNetCard()
+    439:450:public void checkNetCardState()
+    502:527:public java.lang.String getScanResult()
+    534:536:public void connect()
+    542:546:public void disconnectWifi()
+    554:559:public void checkNetWorkState()
+    565:565:public int getNetworkId()
+    572:572:public int getIPAddress()
+    577:578:public void acquireWifiLock()
+    583:586:public void releaseWifiLock()
+    590:591:public void creatWifiLock()
+    595:595:public java.util.List getConfiguration()
+    601:607:public void connectConfiguration(int)
+    611:611:public java.lang.String getMacAddress()
+    616:616:public java.lang.String getBSSID()
+    621:621:public java.lang.String getWifiInfo()
+    626:628:public int addNetwork(android.net.wifi.WifiConfiguration)
+com.daocaowu.itelligentprofile.fragment.WifiProfileFragment:
+    private static final java.lang.String TAG
+    private java.lang.String mScanResult
+com.daocaowu.itelligentprofile.service.GPSService:
+    private static final double EARTH_RADIUS
+com.daocaowu.itelligentprofile.service.GPSService$GPSServiceBinder:
+    369:369:com.daocaowu.itelligentprofile.service.GPSService getService()
+com.daocaowu.itelligentprofile.service.GPSServiceListener
+com.daocaowu.itelligentprofile.service.IService:
+    public abstract void update(java.lang.Object)
+com.daocaowu.itelligentprofile.service.LocationService:
+    private static final java.lang.String TAG
+    66:66:public static java.util.List getLocationsWithoutProfile()
+    77:78:public void update(java.lang.Object)
+    107:112:public static com.daocaowu.itelligentprofile.bean.Profile getProfile(int)
+    123:128:public static void startLocation(android.content.Context,boolean,long)
+    167:167:public static java.util.List checkLocationWithProfile(android.content.Context)
+    177:177:public static int checkLocationByDB(android.content.Context,com.daocaowu.itelligentprofile.bean.Location)
+    181:189:public static void addAlarmLoction(com.daocaowu.itelligentprofile.bean.Location)
+    196:206:public static void setAlarmLocation(java.util.List)
+    274:275:public static com.daocaowu.itelligentprofile.bean.Location calculateleCorrespondLocation(android.content.Context,com.baidu.mapapi.map.LocationData)
+    279:280:public static long claculateAlarmTime()
+com.daocaowu.itelligentprofile.service.LocationService$NotifyLister:
+    private com.daocaowu.itelligentprofile.service.LocationService$NotifyLister notifyLister
+    214:215:public void setNotifyLister(com.daocaowu.itelligentprofile.service.LocationService$NotifyLister)
+    263:264:public void remove()
+com.daocaowu.itelligentprofile.service.MyBootReciver
+com.daocaowu.itelligentprofile.service.NoteService:
+    39:41:public void update(java.lang.Object)
+com.daocaowu.itelligentprofile.service.ProfileService:
+    65:67:public void update(java.lang.Object)
+com.daocaowu.itelligentprofile.service.ProfileService2
+com.daocaowu.itelligentprofile.service.ProfileTaskReceiver
+com.daocaowu.itelligentprofile.service.ProfileTaskService
+com.daocaowu.itelligentprofile.service.ProfileTaskService$1
+com.daocaowu.itelligentprofile.service.ProfileTaskService$MyBinder
+com.daocaowu.itelligentprofile.service.ProfileTaskService$ProfileTaskStrategy
+com.daocaowu.itelligentprofile.service.ProfileTaskService$ProfileTaskStrategy$1
+com.daocaowu.itelligentprofile.service.ProfileTaskService2
+com.daocaowu.itelligentprofile.service.TaskReceiver:
+    private static final int STALE_WINDOW
+    190:213:private void sendNotification(android.content.Context,com.daocaowu.itelligentprofile.bean.Task)
+    222:222:private android.app.NotificationManager getNotificationManager(android.content.Context)
+com.daocaowu.itelligentprofile.service.TaskReceiverService:
+    private static final int KILLER
+com.daocaowu.itelligentprofile.service.TaskReceiverService$MyBinder:
+    229:229:public com.daocaowu.itelligentprofile.service.TaskReceiverService getService()
+com.daocaowu.itelligentprofile.service.TaskReceiverService$WifiAdmin:
+    private static final java.lang.String TAG
+    private java.util.List mWifiConfiguration
+    android.net.wifi.WifiManager$WifiLock mWifiLock
+    531:534:public void openNetCard()
+    540:543:public void closeNetCard()
+    549:560:public void checkNetCardState()
+    613:639:public java.lang.String getScanResult()
+    646:648:public void connect()
+    654:658:public void disconnectWifi()
+    666:671:public void checkNetWorkState()
+    677:677:public int getNetworkId()
+    684:684:public int getIPAddress()
+    689:690:public void acquireWifiLock()
+    695:698:public void releaseWifiLock()
+    702:703:public void creatWifiLock()
+    707:707:public java.util.List getConfiguration()
+    713:719:public void connectConfiguration(int)
+    723:723:public java.lang.String getMacAddress()
+    728:728:public java.lang.String getBSSID()
+    733:733:public java.lang.String getWifiInfo()
+    738:740:public int addNetwork(android.net.wifi.WifiConfiguration)
+com.daocaowu.itelligentprofile.service.TaskService:
+    public static final java.lang.String PREFERENCES
+    static final java.lang.String PREF_SNOOZE_ID
+    static final java.lang.String PREF_SNOOZE_TIME
+    public static final int TASK_STATUSBAR_CANCEL
+    public static final int TASK_STATUSBAR_NOTIFY
+    public static final int TASK_STATUSBAR_INVARIANT
+    public static final long ONE_WEEK_TIME
+    public static final java.lang.String POWER_SAVING_TASK_ACTION
+    public static final java.lang.String GPS_TASK_ACTION
+    public static final java.lang.String WIFI_TASK_ACTION
+    public static final java.lang.String TASK_ALERT_ACTION
+    public static final java.lang.String TASK_DONE_ACTION
+    public static final java.lang.String TASK_SNOOZE_ACTION
+    public static final java.lang.String TASK_DISMISS_ACTION
+    public static final java.lang.String TASK_KILLED
+    public static final java.lang.String TASK_WIFI_ACTION
+    public static final java.lang.String TASK_GPS_ACTION
+    public static final java.lang.String TASK_INTENT_EXTRA
+    public static final java.lang.String TASK_RAW_DATA
+    public static final java.lang.String TASK_ID
+    private static final java.lang.String DM12
+    private static final java.lang.String DM24
+    private static final java.lang.String M12
+    static final java.lang.String M24
+    public static com.daocaowu.itelligentprofile.bean.Task currentTask
+    139:164:public static int add(android.content.Context,java.lang.Object)
+    187:189:public void update(java.lang.Object)
+    390:396:public static void enableWifiTask(android.content.Context,int,long)
+    403:406:public static void disableWifiTask(android.content.Context)
+    415:420:public static void enableGPSTask(android.content.Context,int,long)
+    427:430:public static void disableGPSTask(android.content.Context)
+    443:444:static java.lang.String formatTime(android.content.Context,java.lang.String,int)
+    449:450:public static java.lang.String formatTime(android.content.Context,java.util.Calendar)
+com.daocaowu.itelligentprofile.service.UpdateReceiver
+com.daocaowu.itelligentprofile.service.WifiLocationService:
+    private static final java.lang.String TAG
+    62:62:public java.util.List checkWithoutProfile()
+    68:67:public static com.daocaowu.itelligentprofile.bean.WifiLocation check(java.lang.String)
+    78:80:public void update(java.lang.Object)
+    84:84:public static void initWifiLocation(android.content.Context)
+    87:93:public static void setWifiLocation(android.content.Context,long)
+    124:124:public static java.util.List getCurrentWifiLocations(java.util.List)
+    133:135:public static com.daocaowu.itelligentprofile.bean.WifiLocation getAccurateWifiLocation(java.util.List)
+    144:149:public static com.daocaowu.itelligentprofile.bean.Profile getProfile(int)
+    158:158:public static com.daocaowu.itelligentprofile.bean.WifiLocation hasBssid(java.lang.String)
+com.daocaowu.itelligentprofile.strategy.IStrategy
+com.daocaowu.itelligentprofile.strategy.ProfileTaskStrategy
+com.daocaowu.itelligentprofile.strategy.ProfileTaskStrategy$1
+com.daocaowu.itelligentprofile.strategy.Strategy
+com.daocaowu.itelligentprofile.utils.AlarmManagerUtil
+com.daocaowu.itelligentprofile.utils.ConstData
+com.daocaowu.itelligentprofile.utils.DataApplication:
+    21:21:public DataApplication()
+    123:123:public static int getScreenHeight()
+    137:137:public static int getScreenStatusBar()
+    144:145:public static void setScreenHeight(int)
+    151:152:public static void setScreenWidth(int)
+    158:159:public static void setScreenStatusBar(int)
+com.daocaowu.itelligentprofile.utils.DateUtil:
+    10:10:public DateUtil()
+    18:23:public static java.util.Date getNowDate()
+    32:35:public static java.lang.String getStringDate()
+    59:63:public static java.lang.String getDateByAdd(int)
+    72:75:public static java.lang.String getTimeShort()
+    84:90:public static java.lang.String getTimeShort(java.lang.String)
+    99:105:public static java.lang.String getTimeJustMin(java.lang.String)
+    115:118:public static java.util.Date strToDateLong(java.lang.String)
+    128:134:public static java.lang.String strToDateStr(java.lang.String)
+    144:146:public static java.lang.String dateToStrLong(java.util.Date)
+    150:153:public static java.lang.String dateToStringLong(java.util.Date,int)
+    163:165:public static java.lang.String dateToStrLong(java.util.Calendar)
+    179:182:public static java.lang.String dateToStringLong(java.util.Calendar,int)
+    193:195:public static java.lang.String dateToStr(java.util.Date)
+    205:208:public static java.util.Date strToDate(java.lang.String)
+    217:218:public static java.util.Date getNow()
+    228:231:public static java.util.Date getLastDate(long)
+    240:243:public static java.lang.String getStringToday()
+    250:255:public static java.lang.String getHour()
+    264:269:public static java.lang.String getTime()
+    280:283:public static java.lang.String getUserDate(java.lang.String)
+    298:315:public static boolean getDayDiffFromToday(java.util.Date,int)
+    329:348:public static boolean getDayDiffFromToday(java.lang.String,int)
+    359:386:public static java.lang.String getTimeDependToday(java.lang.String)
+    410:411:public static java.lang.String getHHmmString()
+    489:503:public static final java.sql.Timestamp string2TimeStamp(java.lang.String)
+    516:522:public static final java.lang.String timestamp2String(java.sql.Timestamp)
+    535:540:public static java.util.Date getDate(java.lang.String)
+    553:554:public static java.lang.String getDate(java.util.Date)
+    567:570:public static java.util.Date getLongDate(java.lang.String)
+    583:584:public static java.lang.String getLongDate(java.util.Date)
+com.daocaowu.itelligentprofile.utils.NotificationExtend
+com.daocaowu.itelligentprofile.utils.SwitchProfileUtil:
+    21:21:public SwitchProfileUtil()
+    230:230:public static void setWifiAPOpen()
+    235:235:public static void setWifiAPClose()
+    238:242:public static void setWifiAP(int)
+    317:319:public static void setScreenRotationAUTOMATIC(android.content.Context)
+    322:324:public static void setScreenRotationMANUAL(android.content.Context)
+    327:331:public static void setScreenRotation(android.content.Context,int)
+com.daocaowu.itelligentprofile.utils.SystemUtil:
+    18:18:public SystemUtil()
+    46:47:public static int dip2px(android.content.Context,float)
+    57:58:public static int px2dip(android.content.Context,float)
+    77:85:public static android.graphics.Bitmap decodeUriAsBitmap(android.content.Context,android.net.Uri)
+    94:107:public static void alignGalleryToLeft(android.content.Context,android.widget.Gallery,int,int)
+    112:141:public static java.lang.String MD5(java.lang.String)
+    146:148:public static java.lang.String getIMEI(android.content.Context)
+    156:166:public static void getGeography(android.content.Context,double,double)
+com.daocaowu.itelligentprofile.utils.ToastFactory:
+    18:18:public ToastFactory()
+    39:51:public static void showToast(java.lang.String)
+com.daocaowu.itelligentprofile.view.MyImageView:
+    48:49:public void SetAnimationOnOff(boolean)
+com.daocaowu.itelligentprofile.view.PullToRefreshListView
+com.daocaowu.itelligentprofile.view.PullToRefreshListView$LoadFooterOnclick
+com.daocaowu.itelligentprofile.view.PullToRefreshListView$OnClickRefreshListener
+com.daocaowu.itelligentprofile.view.PullToRefreshListView$OnRefreshListener
+com.daocaowu.itelligentprofile.view.Record
+com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider:
+    private static final java.lang.String TAG
+    public static final java.lang.String DELETE
+    public static final java.lang.String UPDATE
+    public static final java.lang.String ENABLE_TYPE
+    public static final java.lang.String ENABLE_BY_USER
+    public static final java.lang.String ENABLE_BY_TASK
+    public static final java.lang.String ENABLE_BY_LOCATION
+    public static final java.lang.String ENABLE_BY_WIFI
+    public static final java.lang.String ENABLE_BY_POWER_SAVING
+    protected abstract int getLayoutId()
+    protected abstract int getWidgetType()
+com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider_2x:
+    private static final java.lang.String TAG
+    75:75:protected int getWidgetType()
+com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider_4x:
+    private static final java.lang.String TAG
+    81:81:protected int getWidgetType()
+com.slidingmenu.lib.app2.SlidingActivity
+com.slidingmenu.lib.app2.SlidingActivityBase
+com.slidingmenu.lib.app2.SlidingActivityHelper:
+    96:99:public void setSlidingActionBarEnabled(boolean)
+    150:152:public void setContentView(android.view.View)
+    179:180:public void toggle()
+    201:202:public void showSecondaryMenu()
+com.slidingmenu.lib.app2.SlidingFragmentActivity:
+    111:112:public void toggle()
+    132:133:public void showSecondaryMenu()
+    139:140:public void setSlidingActionBarEnabled(boolean)
+com.slidingmenu.lib.app2.SlidingListActivity
+com.slidingmenu.lib.app2.SlidingPreferenceActivity
+com.slidingmenu.lib2.CanvasTransformerBuilder
+com.slidingmenu.lib2.CanvasTransformerBuilder$1
+com.slidingmenu.lib2.CanvasTransformerBuilder$2
+com.slidingmenu.lib2.CanvasTransformerBuilder$3
+com.slidingmenu.lib2.CanvasTransformerBuilder$4
+com.slidingmenu.lib2.CanvasTransformerBuilder$5
+com.slidingmenu.lib2.CanvasTransformerBuilder$6
+com.slidingmenu.lib2.CustomViewAbove:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    281:284:public void addIgnoredView(android.view.View)
+    287:288:public void removeIgnoredView(android.view.View)
+    291:292:public void clearIgnoredViews()
+    349:355:public int getChildWidth(int)
+    360:360:public boolean isSlidingEnabled()
+    374:375:void smoothScrollTo(int,int)
+    899:916:protected boolean canScroll(android.view.View,boolean,int,int,int)
+com.slidingmenu.lib2.CustomViewAbove$SimpleOnPageChangeListener:
+    145:145:public void onPageScrollStateChanged(int)
+com.slidingmenu.lib2.CustomViewBehind:
+    private static final java.lang.String TAG
+    private static final int MARGIN_THRESHOLD
+com.slidingmenu.lib2.MenuInterface
+com.slidingmenu.lib2.R:
+    9:9:public R()
+com.slidingmenu.lib2.R$attr
+com.slidingmenu.lib2.R$id:
+    10:10:public R$id()
+com.slidingmenu.lib2.R$layout:
+    18:18:public R$layout()
+com.slidingmenu.lib2.R$styleable:
+    21:21:public R$styleable()
+com.slidingmenu.lib2.SlidingMenu:
+    private static final java.lang.String TAG
+    public static final int SLIDING_WINDOW
+    public static final int SLIDING_CONTENT
+    public static final int TOUCHMODE_MARGIN
+    public static final int TOUCHMODE_FULLSCREEN
+    public static final int TOUCHMODE_NONE
+    public static final int LEFT
+    public static final int RIGHT
+    public static final int LEFT_RIGHT
+    433:433:public boolean isSlidingEnabled()
+    495:496:public void showSecondaryMenu()
+    835:836:public void addIgnoredView(android.view.View)
+    844:845:public void removeIgnoredView(android.view.View)
+    851:852:public void clearIgnoredViews()
+com.slidingmenu.lib2.SlidingMenu$1:
+    public static final int POSITION_OPEN
+    public static final int POSITION_CLOSE
+com.viewpagerindicator.CirclePageIndicator:
+    private static final int INVALID_POINTER
+    68:69:public CirclePageIndicator(android.content.Context)
+    72:73:public CirclePageIndicator(android.content.Context,android.util.AttributeSet)
+    76:114:public CirclePageIndicator(android.content.Context,android.util.AttributeSet,int)
+    123:123:public boolean isCentered()
+    194:194:public boolean isSnap()
+    382:384:public void setViewPager(android.support.v4.view.ViewPager,int)
+    398:399:public void notifyDataSetChanged()
+com.viewpagerindicator.IconPageIndicator
+com.viewpagerindicator.IconPageIndicator$1
+com.viewpagerindicator.IconPagerAdapter
+com.viewpagerindicator.IcsLinearLayout
+com.viewpagerindicator.LinePageIndicator:
+    private static final int INVALID_POINTER
+    58:59:public LinePageIndicator(android.content.Context)
+    62:63:public LinePageIndicator(android.content.Context,android.util.AttributeSet)
+    66:98:public LinePageIndicator(android.content.Context,android.util.AttributeSet,int)
+    107:107:public boolean isCentered()
+    295:297:public void setViewPager(android.support.v4.view.ViewPager,int)
+    311:312:public void notifyDataSetChanged()
+com.viewpagerindicator.PageIndicator:
+    public abstract void setViewPager(android.support.v4.view.ViewPager)
+    public abstract void setViewPager(android.support.v4.view.ViewPager,int)
+    public abstract void setCurrentItem(int)
+    public abstract void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    public abstract void notifyDataSetChanged()
+com.viewpagerindicator.R
+com.viewpagerindicator.R$attr
+com.viewpagerindicator.R$bool
+com.viewpagerindicator.R$color
+com.viewpagerindicator.R$dimen
+com.viewpagerindicator.R$drawable
+com.viewpagerindicator.R$id
+com.viewpagerindicator.R$integer
+com.viewpagerindicator.R$style
+com.viewpagerindicator.R$styleable
+com.viewpagerindicator.TabPageIndicator
+com.viewpagerindicator.TabPageIndicator$1
+com.viewpagerindicator.TabPageIndicator$2
+com.viewpagerindicator.TabPageIndicator$OnTabReselectedListener
+com.viewpagerindicator.TabPageIndicator$TabView
+com.viewpagerindicator.TitlePageIndicator:
+    private static final float SELECTION_FADE_PERCENTAGE
+    private static final float BOLD_FADE_PERCENTAGE
+    private static final java.lang.String EMPTY_TITLE
+    private static final int INVALID_POINTER
+    152:153:public TitlePageIndicator(android.content.Context)
+    156:157:public TitlePageIndicator(android.content.Context,android.util.AttributeSet)
+    160:216:public TitlePageIndicator(android.content.Context,android.util.AttributeSet,int)
+    285:285:public boolean isSelectedBold()
+    725:727:public void setViewPager(android.support.v4.view.ViewPager,int)
+    731:732:public void notifyDataSetChanged()
+com.viewpagerindicator.TitlePageIndicator$IndicatorStyle:
+    89:94:public static com.viewpagerindicator.TitlePageIndicator$IndicatorStyle fromValue(int)
+com.viewpagerindicator.TitlePageIndicator$LinePosition:
+    108:113:public static com.viewpagerindicator.TitlePageIndicator$LinePosition fromValue(int)
+com.viewpagerindicator.UnderlinePageIndicator:
+    private static final int INVALID_POINTER
+    private static final int FADE_FRAME_MS
+    74:75:public UnderlinePageIndicator(android.content.Context)
+    78:79:public UnderlinePageIndicator(android.content.Context,android.util.AttributeSet)
+    82:110:public UnderlinePageIndicator(android.content.Context,android.util.AttributeSet,int)
+    290:292:public void setViewPager(android.support.v4.view.ViewPager,int)
+    306:307:public void notifyDataSetChanged()
+    42:42:static synthetic android.graphics.Paint access$1(com.viewpagerindicator.UnderlinePageIndicator)
+    47:47:static synthetic int access$2(com.viewpagerindicator.UnderlinePageIndicator)
+com.viewpagerindicator.UnderlinePageIndicator$1
+vi.com.gdi.bgl.android.java.EnvDrawText

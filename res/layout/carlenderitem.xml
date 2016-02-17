@@ -1,0 +1,70 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/item4"
+        android:gravity="center" >
+        	
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/startTime"
+                    android:gravity="center"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="2013-4-14"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/endTime"
+                    android:gravity="center"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2013-4-14"
+                    android:textColor="@color/white" />
+                
+        	 </LinearLayout>
+
+        	 <LinearLayout
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:layout_marginLeft="5dp"
+        	     android:layout_marginRight="26dp"
+        	     android:gravity="center_horizontal"
+        	     android:orientation="vertical" >
+
+        	     <TextView
+        	         android:id="@+id/profile"
+        	         android:layout_width="180dp"
+        	         android:layout_height="wrap_content"
+        	         android:layout_marginLeft="36dp"
+        	         android:layout_marginRight="26dp"
+        	         android:layout_marginBottom="8dp"
+        	         android:ellipsize="end"
+        	         android:text="情景模式名称"
+        	         android:textColor="@color/white"
+        	         android:textSize="20sp" />
+
+        	     <TextView
+        	         android:id="@+id/calenderitemname"
+        	         android:layout_width="180dp"
+        	         android:layout_height="wrap_content"
+        	         android:layout_marginLeft="36dp"
+        	         android:layout_marginRight="26dp"
+        	         android:layout_marginBottom="8dp"
+        	         android:ellipsize="end"
+        	         android:text="工作模式"
+        	         android:textColor="@color/white" />
+
+        	 </LinearLayout>
+    </LinearLayout>

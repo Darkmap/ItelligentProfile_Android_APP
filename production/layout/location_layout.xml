@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_location"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#66bf9b" >
+
+       <ImageView
+            android:id="@+id/imageView_gps"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gps" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_location" >
+
+        <Button
+            android:id="@+id/add_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/green_btn"
+            android:text="添加定位"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_start_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_set_location" >
+
+        <CheckBox
+            android:id="@+id/start_location"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/green_btn"
+            android:text="启用定位"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/gpslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_start_location"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+</RelativeLayout>

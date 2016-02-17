@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue" >
+
+    <LinearLayout
+        android:id="@+id/listMenu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/menuTitle"
+            android:text="菜单" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/listMenu_1"
+            style="@style/menuList"
+            android:text="情景模式" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/listMenu_2"
+            style="@style/menuList"
+            android:text="语音记事" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/listMenu_3"
+            style="@style/menuList"
+            android:text="定位情景" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/listMenu_4"
+            style="@style/menuList"
+            android:text="WIFI情景" >
+        </TextView>
+        <TextView
+            android:id="@+id/listMenu_5"
+            style="@style/menuList"
+            android:text="省电情景" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/listMenu_6"
+            style="@style/menuList"
+            android:text="软件说明" >
+        </TextView>
+
+        <TextView style="@style/menuBlank" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/listMenu_exit"
+            style="@style/menuTitle"
+            android:text="退出" >
+        </TextView>
+
+       <!--  <TextView style="@style/menuList" >
+        </TextView> -->
+    </LinearLayout>
+
+</ScrollView>

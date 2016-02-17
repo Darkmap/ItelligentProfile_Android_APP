@@ -1,0 +1,78 @@
+# view res/layout/homepad.xml #generated:166
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:237
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.daocaowu.itelligentprofile.activity.AddProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class com.daocaowu.itelligentprofile.activity.AddTask { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.daocaowu.itelligentprofile.activity.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.daocaowu.itelligentprofile.activity.GPSMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.daocaowu.itelligentprofile.activity.LoadOfflineMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.daocaowu.itelligentprofile.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.daocaowu.itelligentprofile.activity.MainPad { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.daocaowu.itelligentprofile.activity.WebViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.daocaowu.itelligentprofile.activity.WifiProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:229
+-keep class com.daocaowu.itelligentprofile.service.GPSService { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.daocaowu.itelligentprofile.service.MonitorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class com.daocaowu.itelligentprofile.service.TaskInitReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.daocaowu.itelligentprofile.service.TaskReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.daocaowu.itelligentprofile.service.TaskReceiverService { <init>(...); }
+
+# view res/layout/calenderview.xml #generated:15
+# view res/layout/calenderview.xml #generated:24
+# view res/layout/griditem.xml #generated:8
+# view res/layout/profileitem.xml #generated:9
+-keep class com.daocaowu.itelligentprofile.view.MyImageView { <init>(...); }
+
+# view res/layout/gps_map_layout.xml #generated:168
+-keep class com.daocaowu.itelligentprofile.view.NewMapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:187
+-keep class com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider_2x { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.daocaowu.itelligentprofile.widget.ProfileWidgetProvider_4x { <init>(...); }
+
+# view res/layout/pull_to_refresh.xml #generated:12
+-keep class com.honsen.yuexin.activity.PullToRefreshListView { <init>(...); }
+
+# onClick res/layout/setting_view.xml #generated:15
+-keepclassmembers class * { *** addprofile(...); }
+
+# onClick res/layout/calenderview.xml #generated:24
+-keepclassmembers class * { *** addtask(...); }
+
+# onClick res/layout/addtask.xml #generated:45
+-keepclassmembers class * { *** selectProfile(...); }
+
+# onClick res/layout/wifilistview.xml #generated:12
+-keepclassmembers class * { *** showlist(...); }
+

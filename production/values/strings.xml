@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能情景模式</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pull_to_refresh_pull_label">拉动刷新...</string>
+    <string name="pull_to_refresh_release_label">松开即可刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">刷新中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新...</string>
+    <string name="pull_to_refresh_last_time">上次刷新时间:%1$s</string>
+    <string name="day_concat">", "</string>
+    <string name="title_activity_wifi_profile">WifiProfileActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="record">语音</string>
+    <string name="stop">停止</string>
+    <string name="title_activity_load_offline_map">LoadOfflineMapActivity</string>
+    <string name="app_widget2x2">智能情景</string>
+    <string name="app_widget4x4">智能情景</string>
+    <string name="TaskReceiverServiceName">核心后台服务</string>
+
+</resources>

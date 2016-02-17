@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dip"
+    android:layout_height="72dip" >
+    <ImageView
+        android:id="@+id/widget_bg_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/widget_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="6"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="20dip"
+        android:text="默认情景"
+        android:textColor="#FF663300"
+        android:textSize="14sp" />
+
+</FrameLayout>

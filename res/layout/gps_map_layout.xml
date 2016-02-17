@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4F4F4"
+    android:gravity="top"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/searchCityEdit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_bar_icon_normal" />
+
+        <EditText
+            android:id="@+id/searchCityEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/searchButton"
+            android:background="@drawable/search_bar_edit_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="搜索         "
+            android:singleLine="true"
+            android:textColor="#000" >
+        </EditText>
+
+        <!-- <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/searchCityEdit"
+            android:layout_alignRight="@+id/searchCityEdit"
+            android:background="@drawable/search_bar_icon_clear" /> -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="fill_vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/searchListLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+                
+                <ListView
+                    android:id="@+id/searchList_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10" >
+                </ListView>
+                
+                <RelativeLayout
+                    android:id="@+id/returnMapLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mm_listitem"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/returnMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="返回"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mapLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#CDCDC1"
+                android:orientation="vertical" >
+
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="请定义位置名称" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/OfflineMapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="离线地图 " />
+
+                    <Button
+                        android:id="@+id/locationButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="定位 " />
+
+                    <Button
+                        android:id="@+id/saveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="保存位置" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/diminishButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缩小 " />
+
+                    <SeekBar
+                        android:id="@+id/radiusSeekBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:max="1000"
+                        android:progress="50"
+                        android:secondaryProgress="0" />
+
+                    <Button
+                        android:id="@+id/enlargeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="放大" />
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <com.daocaowu.itelligentprofile.view.NewMapView
+                        android:id="@+id/bmapsView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/button1"
+                        android:layout_marginBottom="0dp"
+                        android:clickable="true" />
+
+                </FrameLayout>
+
+               <!--  <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="0dp"
+                    > 
+
+                <com.daocaowu.itelligentprofile.view.NewMapView
+                    android:id="@+id/bmapsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:paddingBottom="0dp" >
+                </com.daocaowu.itelligentprofile.view.NewMapView>
+
+                </LinearLayout> -->
+            </LinearLayout>
+            
+        </FrameLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#01fe99"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="搜索（可通过省份搜索城市）"
+            android:singleLine="true"
+            android:textColor="#000" >
+        </EditText>
+        
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/radiusSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="1000"
+            android:progress="50"
+            android:secondaryProgress="0" >
+        </SeekBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+       <Button
+            android:id="@+id/OfflineMapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离线地图 " />
+
+        <Button
+            android:id="@+id/enlargeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放大" />
+
+        <Button
+            android:id="@+id/diminishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩小 " />
+
+        <Button
+            android:id="@+id/locationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="保存位置" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        
+             <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+       
+
+        <com.daocaowu.itelligentprofile.view.NewMapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/button1"
+            android:clickable="true" />
+
+        
+             <ImageView
+            android:id="@+id/overlay_of_center_point"
+            android:layout_width="188dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+            android:scaleType="center" />
+       
+    </FrameLayout>
+
+</LinearLayout>-->
+

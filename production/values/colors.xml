@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vifrification">#00000000</color> 
+    <color name="white">#ffffff</color> 
+    <color name="black">#000000</color> 
+    <color name="gray">#4F4F4F</color> 
+    <color name="blue">#87CEFA</color>
+    <color name="red">#cc0000</color>
+    <color name="green">#78dea1</color>
+    <color name="green_btn">#669900</color>
+    <color name="mon">#eb5050</color>
+    <color name="tue">#f46b36</color>
+    <color name="wed">#f8cf0f</color>
+    <color name="thur">#58dd4a</color>
+    <color name="fri">#b73ee3</color>
+    <color name="sat">#3eafe3</color>
+    <color name="sun">#6313f5</color>
+</resources>

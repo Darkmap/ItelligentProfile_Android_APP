@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="#01b2fe" >
+
+        <ImageView
+            android:id="@+id/addimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:clickable="true"
+            android:onClick="showlist"
+            android:src="@drawable/add_btn" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="78dp"
+            android:text="WIFI列表"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/start_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style_adao"
+        android:text="启用wifi切换"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/wifi_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#01b2fe" >
+
+        <!--
+            <ImageView
+            android:id="@+id/addimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:clickable="true"
+            android:onClick="showlist"
+            android:src="@drawable/add_btn" />
+        -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省电模式"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/start_power_saving_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#01b2fe"
+        android:gravity="center"
+        android:text="启用省电模式"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" > -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="启动电量：0%"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/savingseekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/profilegrid_power_saving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:layout_weight="3" >
+            </GridView>
+
+            <LinearLayout
+                android:id="@+id/amountsetlayout_power_saving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/seekBar_power_saving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/ok_btn_power_saving"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="确认" />
+
+                    <Button
+                        android:id="@+id/cancel_btn_power_saving"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="取消" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+   <!--  </ScrollView> -->
+
+</LinearLayout>
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="#01b2fe" >
+
+        
+            <ImageView
+            android:id="@+id/addimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:clickable="true"
+            android:onClick="showlist"
+            android:src="@drawable/add_btn" />
+       
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="78dp"
+            android:text="省电模式"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/start_power_saving_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style_adao"
+        android:gravity="center"
+        android:text="启用省电模式"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="启动电量：0%"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/savingseekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/profilegrid_power_saving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3" >
+            </GridView>
+
+            <LinearLayout
+                android:id="@+id/amountsetlayout_power_saving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/seekBar_power_saving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/ok_btn_power_saving"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="确认" />
+
+                    <Button
+                        android:id="@+id/cancel_btn_power_saving"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="取消" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout> -->

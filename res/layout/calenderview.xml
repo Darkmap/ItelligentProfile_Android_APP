@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:background="#e51a2f"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:src="@drawable/monday" >
+
+        <com.daocaowu.itelligentprofile.view.MyImageView
+            android:id="@+id/dayimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/mon" />
+
+        <com.daocaowu.itelligentprofile.view.MyImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="addtask"
+            android:src="@drawable/add_btn" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/calender_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.63" >
+    </ListView>
+
+</LinearLayout>
